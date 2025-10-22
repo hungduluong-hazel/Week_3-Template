@@ -26,7 +26,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# some data
 data = [
         {"name": "Alice", "age": 30, "city": "New York"},
         {"name": "Bob", "age": 24, "city": "London"},
