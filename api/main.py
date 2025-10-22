@@ -26,6 +26,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# some data
+data = [
+        {"name": "Alice", "age": 30, "city": "New York"},
+        {"name": "Bob", "age": 24, "city": "London"},
+        {"name": "Charlie", "age": 35, "city": "Paris"}
+    ]
+
 @app.get("/")           #endpoint, or route, always starts with a forward slash
 def default_route():    #route handler function
     """
